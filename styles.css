@@ -1,4 +1,144 @@
-* {
-    font-family: sans-serif;
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f3f4f6;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #1f2937;
+    color: #f3f4f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fbbf24;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #9ca3af;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+header a {
+    color: #fbbf24;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #f87171;
+}
+
+section {
+    margin-top: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #fbbf24;
+    margin-bottom: 1.5rem;
+}
+
+section p,
+section ul {
+    margin-top: 1rem;
+    color: #4b5563;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+li {
+    margin: 0.75rem 0;
+}
+
+section ul li strong {
+    color: #1f2937;
+}
+
+section ul li::before {
+    content: '•';
+    color: #f87171;
+    padding-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+article h3 {
+    font-size: 1.5rem;
+    color: #374151;
+    margin-top: 1.5rem;
+}
+
+article p {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+article ul {
+    padding-left: 1.5rem;
+}
+
+article li {
+    font-size: 0.95rem;
+}
+
+section h2 a {
+    color: #f87171;
+    text-decoration: none;
+}
+
+section h2 a:hover {
+    color: #fbbf24;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.75rem;
+    }
 }
